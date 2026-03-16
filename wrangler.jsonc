@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "test-app",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-03-15",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "karyawan_db",
+      "database_id": "database-lokal-sementara",
+      "migrations_dir": "drizzle"
+    }
+  ]
+}
