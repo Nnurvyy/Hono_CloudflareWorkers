@@ -1,14 +1,19 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "test-app",
-  "main": "src/index.ts",
-  "compatibility_date": "2026-03-15",
-  "d1_databases": [
-    {
-      "binding": "DB",
-      "database_name": "karyawan_db",
-      "database_id": "database-lokal-sementara",
-      "migrations_dir": "drizzle"
-    }
-  ]
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "test-app",
+	"main": "src/index.ts",
+	"compatibility_date": "2026-03-15",
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "karyawan_db",
+			"database_id": "44a1b276-8466-4a1d-8228-faf6e8fbf533",
+			"migrations_dir": "drizzle"
+		},
+		{
+			"binding": "karyawan_db",
+			"database_name": "karyawan_db",
+			"database_id": "44a1b276-8466-4a1d-8228-faf6e8fbf533"
+		}
+	]
 }

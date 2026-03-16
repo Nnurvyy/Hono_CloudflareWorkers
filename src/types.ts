@@ -6,6 +6,6 @@ export type AppEnv = {
         DB: D1Database; // mengenalkan database D1 ke dalam project
     };
     Variables: {
-        karyawanService: KaryawanService; // mengenalkan service kamu agar bisa dipanggil pakai c.get()
+        karyawanService: KaryawanService; // mengenalkan service agar bisa dipanggil pakai c.get()
     };
 };
