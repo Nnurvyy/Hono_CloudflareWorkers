@@ -1,6 +1,5 @@
 import type { IKaryawanRepository } from "../repositories/karyawan.repository";
 import type { KaryawanSelect } from "../db/schema";
-// Asumsi kamu punya file utility untuk ID dan Waktu seperti di project Tektik
 import { generateId, now } from "../utils/id"; 
 
 export class KaryawanService {
@@ -26,7 +25,6 @@ export class KaryawanService {
     }
 
     async updateKaryawan(id: string, data: { nama?: string; posisi?: string }): Promise<KaryawanSelect> {
-        // Cek apakah eksis
         await this.getKaryawan(id); 
         
         const updated = await this.karyawanRepo.update(id, data);
@@ -35,7 +33,7 @@ export class KaryawanService {
     }
 
     async deleteKaryawan(id: string): Promise<void> {
-        await this.getKaryawan(id); // Memastikan data ada sebelum dihapus
+        await this.getKaryawan(id);
         await this.karyawanRepo.delete(id);
     }
 }
