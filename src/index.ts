@@ -59,7 +59,8 @@ app.doc("/doc", {
     description: "REST API untuk Manajemen Data Karyawan menggunakan Hono & D1",
   },
   servers: [
-    { url: "http://localhost:8787", description: "Local Environment" }
+    { url: "http://localhost:8787", description: "Local Environment" },
+    { url: "https://test-app.mh217512.workers.dev", description: "Production Environment" }
   ]
 });
 
