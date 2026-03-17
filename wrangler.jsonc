@@ -10,10 +10,5 @@
 			"database_id": "44a1b276-8466-4a1d-8228-faf6e8fbf533",
 			"migrations_dir": "drizzle"
 		},
-		{
-			"binding": "karyawan_db",
-			"database_name": "karyawan_db",
-			"database_id": "44a1b276-8466-4a1d-8228-faf6e8fbf533"
-		}
 	]
 }
